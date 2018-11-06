@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    overflow: hidden;
+}
+
+.purple {
+    float: left;
+    width: 4%;
+    height: 100vh;
+    background-color: rgb(54, 13, 54);
+}
+
+.container-fluid {
+    float: left;
+    width: 95.5%;
+}
+
+.report {
+    padding: 0.5% 0 0.2% 2%;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+}
+
+.header {
+    height: 15vh;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.search {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    width: 33%;
+}
+
+.search>input[type=text] {
+    width: 45%;
+    margin-left: 4%;
+    text-align: center;
+    border: none;
+    border: 1px solid blue;
+    border-radius: 15px;
+}
+
+.mac-wrapper, .contract-wrapper {
+    width: 45%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 2;
+    display: none;
+}
+
+.mac-wrapper {
+    top: 105%;
+    left: 4%;
+}
+
+.contract-wrapper {
+    top: 105%;
+    left: 54%;
+}
+
+.mac-wrapper>.mac-div, .contract-wrapper>.contract-div {
+    padding-top: 1%;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.mac-wrapper>.mac-div:hover, .contract-wrapper>.contract-div:hover {
+    transform: scale(1.2);
+}
+
+.filter {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 10%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.filter>i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.apply {
+    width: 80%;
+    margin-left: 15%;
+    background-color: lightblue;
+    border-radius: 15px;
+    color: blue;
+    text-align: center;
+}
+
+.pick-tables {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pick-graphs {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 14%;
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+    cursor: pointer;
+}
