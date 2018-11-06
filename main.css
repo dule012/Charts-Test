@@ -4,6 +4,90 @@
     box-sizing: border-box;
 }
 
+.filter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    overflow: hidden;
+    cursor: pointer;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.viewing-data {
+    min-width: 300px;
+    position: absolute;
+    top: 5%;
+    left: 10px;
+    background-color: white;
+    z-index: -1;
+}
+
+.typed {
+    color: blue;
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+.grey {
+    text-align: left;
+    color: grey;
+    font-size: 12px;
+}
+
+.info {
+    margin-top: -25px;
+    margin-right: 60px;
+    margin-left: 5px;
+}
+
+.days-wrapper {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    width: 50%;
+}
+
+.days {
+    overflow: hidden;
+}
+
+.day1 {
+    float: left;
+    border-radius: 15px 0 0 15px;
+}
+
+.day7 {
+    float: left;
+    border-radius: 0 15px 15px 0;
+}
+
+.day1, .day7 {
+    font-size: 12px;
+    border: 1px solid blue;
+    width: 49%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.date {
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.reset {
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    width: 25%;
+    border: 1px solid blue;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 12px;
+    text-align: center;
+}
 
 .purple {
     position: fixed;
@@ -27,7 +111,7 @@
 }
 
 .header {
-    height: 15vh;
+    height: 18vh;
     border-bottom: 1px solid black;
     margin-bottom: 8vh;
     position: relative;
@@ -37,7 +121,8 @@
     position: absolute;
     top: 20%;
     left: 1%;
-    width: 33%;
+    width: 100%;
+    display: none;
 }
 
 .search>input[type=text] {
@@ -81,15 +166,6 @@
     transform: scale(1.2);
 }
 
-.filter {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 10%;
-    overflow: hidden;
-    cursor: pointer;
-}
-
 .filter>i {
     position: absolute;
     top: 50%;
@@ -99,15 +175,16 @@
 
 .apply {
     width: 80%;
-    margin-left: 15%;
+    margin-left: 18%;
     background-color: lightblue;
     border-radius: 15px;
     color: blue;
     text-align: center;
+    font-size: 13px;
 }
 
 .pick-tables {
-    width: 10%;
+    width: 20%;
     position: absolute;
     bottom: 0;
     left: 2%;
@@ -118,10 +195,10 @@
 }
 
 .pick-graphs {
-    width: 10%;
+    width: 20%;
     position: absolute;
     bottom: 0;
-    left: 14%;
+    left: 24%;
     border: 1px solid black;
     border-bottom: none;
     text-align: center;
@@ -134,25 +211,155 @@
 }
 
 #container1, #container2, #container3, #container4, #container5, #container6, #container7, #container8 {
-    border: 1px solid black;
     width: 102%;
-    margin: auto;
     height: 300px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 9px 0px rgba(84, 81, 173, 1);
 }
+
 .transfered {
     position: absolute;
-    bottom: -4%;
+    bottom: -5%;
     right: 3%;
     font-size: 10.5px;
     color: grey;
 }
+
 svg {
     overflow: visible;
 }
 
 .highcharts-container {
     overflow: visible !important;
+}
+
+.export-wrapper {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    font-size: 13px;
+}
+
+.export-div {
+    float: left;
+    padding: 0px 19px;
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+}
+
+.drop-menu {
+    position: absolute;
+    width: 100%;
+    top: 105%;
+    left: 0;
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 12px;
+}
+
+.drop-menu>div:nth-child(odd) {
+    background-color: white;
+}
+
+.drop-menu>div:nth-child(even) {
+    background-color: rgb(163, 174, 235);
+}
+
+.drop-first {
+    border-radius: 12px 12px 0 0;
+}
+
+.drop-last {
+    border-radius: 0 0 12px 12px;
+}
+
+.export-div>i {
+    margin-left: 3px
+}
+
+.export-wrapper>i {
+    float: left;
+    margin: 3px 0 0 20px;
+    transform: rotate(135deg);
+    font-size: 17px;
+    cursor: pointer
+}
+
+@media screen and (min-width:576px) {
+    .search {
+        width: 50%;
+    }
+    .filter {
+        width: 20%;
+        top: 23%;
+        left: 63%;
+    }
+    .apply {
+        font-size: 14.5px;
+    }
+    .viewing-data {
+        width: 25%;
+    }
+    .currently {
+        font-size: 13.5px
+    }
+    .grey {
+        font-size: 13.5px;
+    }
+    .typed {
+        font-size: 13.5px;
+    }
+    .days-wrapper {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+    }
+    .reset {
+        top: 40%;
+        transform: translate(0, -50%);
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .currently, .grey, .typed {
+        font-size: 15px;
+    }
+    .days-wrapper {
+        width: 30%;
+        font-size: 15px;
+    }
+    .reset {
+        width: 12%;
+        font-size: 15px;
+    }
+    .export-wrapper {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .search {
+        width: 33%;
+    }
+    .filter {
+        width: 12%;
+        top: 23%;
+        left: 43%;
+    }
+    .apply {
+        font-size: 16px;
+    }
+    .pick-tables {
+        width: 10%;
+    }
+    .pick-graphs {
+        left: 15%;
+        width: 10%;
+    }
 }

@@ -563,7 +563,7 @@ $(function () {
             min: 0,
             max: 200,
             tickPixelInterval: 50
-        },
+        }, 
         plotOptions: {
             spline: {
                 lineWidth: 4,
@@ -572,10 +572,11 @@ $(function () {
                 },
             }
         },
+
         series: [
             {
                 name: 'Max',
-                data: [130, 150, 120, 70, 190, 180, 140, 160, 130, 100, 200]
+                data: [130, 150, 120, 70, 190, 180, 140, 160, 130, 100, 200],
             },
             {
                 name: 'Average',
@@ -584,13 +585,162 @@ $(function () {
                 name: 'Min',
                 data: [100, 120, 140, 150, 130, 1100, 120, 130, 160, 1200]
             }],
-        navigation: {
-            menuItemStyle: {
-                fontSize: '10px'
-            }
-        }
-    })
 
+    })
+    //chart7
+    new Highcharts.Chart({
+        chart: {
+            type: 'line',
+            renderTo: 'container7',
+            // spacingTop: 60
+            borderRadius: 20,
+        },
+        title: {
+            text: 'HGw - Number of retranmission',
+            align: 'left',
+        },
+        exporting: { enabled: false },
+        xAxis: {
+            categories: [
+                '06:00',
+                '08:00',
+                '10:00',
+                '12:00',
+                '14:00',
+                '16:00',
+                '18:00',
+                '20:00',
+                '22:00',
+                '00:00',
+                '02:00',
+                '04:00'
+            ],
+
+        },
+        yAxis: {
+
+            min: 0,
+            max: 230000,
+            tickPixelInterval: 35000
+
+        },
+        tooltip: {
+            style: {
+                color: 'white',
+                fontWeight: 'bold',
+            },
+            positioner: function (labelWidth, labelHeight, point) {
+                var tooltipX = point.plotX + 100;
+                var tooltipY = point.plotY + 30;
+                return {
+                    x: tooltipX,
+                    y: tooltipY
+                };
+            },
+            shadow: false,
+            borderWidth: 0,
+            backgroundColor: 'rgb(29, 58, 138)',
+            shared: false,
+            useHTML: true,
+            formatter: function () {
+                return `<div style="text-align: center;height: 30px;width: 115px;"><p >${new Date().getDate() + ' ' + arrOfMonths[new Date().getMonth()]
+                    + '  ' + new Date().getFullYear() + '   ' + this.key}</p>
+                <p style="margin-top: -15px;">${Highcharts.numberFormat(this.y, 0)}</p></div>`
+            },
+        },
+        yAxis: {
+            title: {
+                text: ' '
+            }
+        },
+
+        series: [{
+            name: 'Byte',
+            data: [0, 0, 70000, 0, 70000, 0, 0, 70000, 0, 0, 70000, 0]
+        }, {
+            name: 'Retranmitted Bytes',
+            data: [0, 0, 17500, 0, 17500, 0, 0, 17500, 0, 0, 17500, 0]
+        }],
+
+    })
+    //chart8
+    new Highcharts.Chart({
+        chart: {
+            type: 'areaspline',
+            renderTo: 'container8',
+            // spacingTop: 60
+        },
+        title: {
+            text: 'HGw Number of Clients',
+            align: 'left',
+        },
+        exporting: { enabled: false },
+        xAxis: {
+            categories: [
+                '06:00',
+                '08:00',
+                '10:00',
+                '12:00',
+                '14:00',
+                '16:00',
+                '18:00',
+                '20:00',
+                '22:00',
+                '00:00',
+                '02:00',
+            ],
+
+        },
+        yAxis: {
+            title: {
+                text: 'No. of Clients'
+            },
+            min: 0,
+            max: 20,
+            tickPixelInterval: 5
+
+        },
+        tooltip: {
+            style: {
+                color: 'white',
+                fontWeight: 'bold',
+            },
+            positioner: function (labelWidth, labelHeight, point) {
+                var tooltipX = point.plotX + 100;
+                var tooltipY = point.plotY + 30;
+                return {
+                    x: tooltipX,
+                    y: tooltipY
+                };
+            },
+            shadow: false,
+            borderWidth: 0,
+            backgroundColor: 'rgb(29, 58, 138)',
+            shared: false,
+            useHTML: true,
+            formatter: function () {
+                return `<div style="text-align: center;height: 30px;width: 115px;"><p >${new Date().getDate() + ' ' + arrOfMonths[new Date().getMonth()]
+                    + '  ' + new Date().getFullYear() + '   ' + this.key}</p>
+            <p style="margin-top: -15px;">${Highcharts.numberFormat(this.y, 0)}</p></div>`
+            },
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            areaspline: {
+                fillOpacity: 0.5,
+                marker: {
+                    enabled: false
+                }
+            },
+        },
+        series: [{
+            showInLegend: false,
+            data: [5, 12, 6, 10, 18, 10, 7, 11, 10, 14, 9]
+        },]
+
+    })
 
 })
 
