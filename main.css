@@ -296,9 +296,9 @@ svg {
     top: 120%;
     left: -95%;
     padding: 8px;
-    background-color: black;
+    background-color: white;
     width: 190%;
-    color: white;
+    color: black;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -308,9 +308,10 @@ svg {
     padding: 1% 5%;
     cursor: pointer;
     float: right;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 15px;
     margin-top: 30px;
+    background-color: rgb(235, 222, 222);
 }
 
 .pick-date1, .pick-date2 {
@@ -362,7 +363,11 @@ svg {
     width: 14.2%;
     padding: 1% 0;
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid black;
+}
+
+.left-calendar {
+    display: none;
 }
 
 @media screen and (min-width:576px) {
@@ -406,6 +411,7 @@ svg {
     }
     .date-wrapper {
         left: -45%;
+        display: none;
     }
 }
 
