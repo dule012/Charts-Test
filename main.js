@@ -16,7 +16,6 @@ $(function () {
         widthOfDateInCalendar = 14.2, //from css,
         dateWrapper = document.querySelector('.date-wrapper'),
         date = document.querySelector('.date')
-    console.log(date)
 
     //create Calendar
     for (var i = 0; i < 31; i++) {
@@ -67,7 +66,6 @@ $(function () {
         dateWrapper.style.display = 'block'
     }
     $(window).on('click', function (e) {
-        console.log(e.target.closest('.date-wrapper') == dateWrapper)
         if (e.target.closest('.date-wrapper') != false && e.target.closest('.date') != date) {
             dateWrapper.style.display = 'none'
         }
@@ -125,5 +123,78 @@ $(function () {
     })
 
 
+    var resetFilters = $('.reset'),
+        viewingData = $('.viewing-data'),
+        days = $('.days-wrapper'),
+        search = $('.search'),
+        filter = $('.filter'),
+        apply = $('.apply'),
+        macAddress = $('.mac-address'),
+        contractId = $('.contract-id')
+    resetFilters.on('click', function () {
+        viewingData.css('display', 'none')
+        days.css('display', 'none')
+        filter.css('display', 'block')
+        search.css('display', 'block')
+        apply.css('display', 'block')
+        $(this).css('display', 'none')
+    })
+    apply.on('click', function () {
+        if (inputMac.val() != '' && inputContract.val() != '') {
+
+            viewingData.css('display', 'block')
+            macAddress.text(inputMac.val())
+            contractId.text(inputContract.val())
+            days.css('display', 'block')
+            resetFilters.css('display', 'block')
+            filter.css('display', 'none')
+            search.css('display', 'none')
+            $(this).css('display', 'none')
+            inputMac.val('')
+            inputContract.val('')
+        }
+    })
 
 })
+/*<div class="col-12 row tables">
+
+                <div class="col-12 col-md-6">
+
+                    <div class="card-color">
+                        <p class="bigger-then-others">Overall Status</p>
+                        <div class="colored-div orange">Medium</div>
+                    </div>
+
+                    <div class="card-color">
+                        <p>RSS Status</p>
+                        <div class="colored-div red">Bad</div>
+                    </div>
+
+                    <div class="card-color">
+                        <p>Clinet RSS Status</p>
+                        <div class="colored-div orange">Medium</div>
+                    </div>
+
+                    <div class="card-color">
+                        <p>Sticky Client Status</p>
+                        <div class="colored-div green">Good</div>
+                    </div>
+                    <div class="card-color-wrapper">
+                        <div class="card-color">
+                            <p>Interference Status - overall</p>
+                            <div class="colored-div orange">Medium</div>
+                        </div>
+                        <div class="card-color">
+                            <p>Interference Status Co - Channel</p>
+                            <div class="colored-div green">Good</div>
+                        </div>
+                        <div class="card-color">
+                            <p>Interference Status - Ajdacent</p>
+                            <div class="colored-div red">Bad</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+
+                </div>
+            </div> */
