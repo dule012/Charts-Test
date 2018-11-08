@@ -197,11 +197,10 @@ $(function () {
 
     pickTables.onclick = function (e) {
         var value = macAddress.text()
-        if (value != '') {
+        if (value != '' && e.target.closest('.pick-tables') == pickTables) {
             tablesWrapper.css('display', 'block')
             graphsWrapper.css('display', 'none')
-        }
-        if (e.target.closest('.pick-tables') == pickTables) {
+
             pickTables.style.cssText = 'background-color: #f8f8f8;border-bottom: 1px solid #f8f8f8;'
             pickGraphs.style.cssText = 'background-color: #f4eded;'
         }
@@ -209,29 +208,15 @@ $(function () {
 
     pickGraphs.onclick = function (e) {
         var value = macAddress.text()
-        if (value != '') {
+        if (value != '' && e.target.closest('.pick-graphs') == pickGraphs) {
             graphsWrapper.css('display', 'block')
             tablesWrapper.css('display', 'none')
-        }
-        if (e.target.closest('.pick-graphs') == pickGraphs) {
+
             pickGraphs.style.cssText = 'background-color: #f8f8f8;border-bottom: 1px solid #f8f8f8;'
             pickTables.style.cssText = 'background-color: #f4eded;'
         }
     }
-    var day1 = document.querySelector('.day1'),
-        day7 = document.querySelector('.day7')
-    day1.onclick = function (e) {
-        if (e.target.closest('.day1') == day1) {
-            day1.style.cssText = 'background-color:blue;color:white;'
-            day7.style.cssText = 'background-color:none; color: blue;'
-        }
-    }
-    day7.onclick = function (e) {
-        if (e.target.closest('.day7') == day7) {
-            day7.style.cssText = 'background-color:blue;color:white;'
-            day1.style.cssText = 'background-color:none; color: blue;'
-        }
-    }
+   
 
     var exportWrapper = document.querySelectorAll('.export-wrapper')
     var dropMenu = document.querySelectorAll('.drop-menu')

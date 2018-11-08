@@ -13,6 +13,10 @@ body {
     display: none;
 }
 
+.tables {
+    display: none;
+}
+
 .filter {
     position: absolute;
     top: 50%;
@@ -21,7 +25,6 @@ body {
     overflow: hidden;
     cursor: pointer;
     transform: translate(-50%, 0);
-    display: none;
 }
 
 .viewing-data {
@@ -32,6 +35,7 @@ body {
     width: 165px;
     height: 63px;
     border-radius: 10px;
+    display: none;
 }
 
 .typed {
@@ -61,6 +65,7 @@ body {
     left: 50%;
     width: 50%;
     z-index: 99999;
+    display: none;
 }
 
 .days {
@@ -102,6 +107,7 @@ body {
     border-radius: 15px;
     font-size: 12px;
     text-align: center;
+    display: none;
 }
 
 .purple {
@@ -142,7 +148,6 @@ body {
     top: 20%;
     left: 1%;
     width: 100%;
-    display: none;
 }
 
 .search>input[type=text] {
@@ -274,9 +279,11 @@ svg {
     text-align: center;
     position: relative;
 }
-.block{
-    display:'block';
+
+.block {
+    display: 'block';
 }
+
 .drop-menu {
     position: absolute;
     width: 100%;
@@ -453,7 +460,7 @@ svg {
         width: 22%;
         font-size: 11px !important;
     }
-    .grey{
+    .grey {
         font-size: 14px;
     }
     .typed {
@@ -498,7 +505,7 @@ svg {
     .apply {
         font-size: 16px;
     }
-    .grey{
+    .grey {
         font-size: 14px;
     }
     .typed {

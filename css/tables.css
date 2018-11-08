@@ -211,4 +211,7 @@
         padding-top: 0.8%;
         margin-top: 0;
     }
+    .table-column-2,.table-column-3{
+        margin-left: -15px;
+    }
 }
