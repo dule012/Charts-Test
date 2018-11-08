@@ -162,7 +162,9 @@ $(function () {
         filter = $('.filter'),
         apply = $('.apply'),
         macAddress = $('.mac-address'),
-        contractId = $('.contract-id')
+        contractId = $('.contract-id'),
+        tablesWrapper = $('.tables')
+
 
     resetFilters.on('click', function () {
         viewingData.css('display', 'none')
@@ -172,6 +174,16 @@ $(function () {
         apply.css('display', 'block')
         macAddress.text('')
         contractId.text('')
+        $('.charts').css('display', 'none')
+        tablesWrapper.css('display', 'none')
+        $('.pick-tables').css({
+            'background-color': '#f4eded',
+            'border-bottom': 'black'
+        })
+        $('.pick-graphs').css({
+            'background-color': '#f4eded',
+            'border-bottom': 'black'
+        })
         $(this).css('display', 'none')
     })
     apply.on('click', function () {
@@ -192,8 +204,7 @@ $(function () {
 
     var pickTables = document.querySelector('.pick-tables'),
         pickGraphs = document.querySelector('.pick-graphs'),
-        graphsWrapper = $('.charts'),
-        tablesWrapper = $('.tables')
+        graphsWrapper = $('.charts')
 
     pickTables.onclick = function (e) {
         var value = macAddress.text()
@@ -216,7 +227,7 @@ $(function () {
             pickTables.style.cssText = 'background-color: #f4eded;'
         }
     }
-   
+
 
     var exportWrapper = document.querySelectorAll('.export-wrapper')
     var dropMenu = document.querySelectorAll('.drop-menu')
