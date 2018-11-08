@@ -563,7 +563,7 @@ $(function () {
             min: 0,
             max: 200,
             tickPixelInterval: 50
-        }, 
+        },
         plotOptions: {
             spline: {
                 lineWidth: 4,
@@ -741,6 +741,404 @@ $(function () {
         },]
 
     })
+
+    //chart9
+    new Highcharts.Chart({
+        chart: {
+            renderTo: 'container9',
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        exporting: { enabled: false },
+        title: {
+            text: 'HGw Wifi Usage',
+            style: { color: 'blue' },
+            align: 'left',
+            x: 0,
+            y: 10
+        },
+        plotOptions: {
+            pie: {
+                center: [40, -10],
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            showInLegend: true
+
+        },
+        legend: {
+            align: 'left',
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontWeight: 'normal',
+                fontSize: '12px'
+            },
+            x: -10,
+            y: -10
+        },
+        series: [{
+            innerSize: '50%',
+            size: '380%',
+            showInLegend: true,
+            data: [
+                { name: 'Low', y: 55.0 },
+                { name: 'Medium', y: 31.0 },
+                { name: 'High', y: 14.0 }
+            ]
+        }]
+    })
+    //chart10
+    new Highcharts.Chart({
+        chart: {
+            renderTo: 'container10',
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        exporting: { enabled: false },
+        title: {
+            text: 'HGw Wifi Usage',
+            style: { color: 'blue' },
+            align: 'left',
+            x: 0,
+            y: 10
+        },
+        plotOptions: {
+            pie: {
+                center: [40, -10],
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            showInLegend: true
+
+        },
+        legend: {
+            align: 'left',
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontWeight: 'normal',
+                fontSize: '12px'
+            },
+            x: -10,
+            y: -10
+        },
+        series: [{
+            innerSize: '50%',
+            size: '380%',
+            showInLegend: true,
+            data: [
+                { name: 'Low', y: 55.0 },
+                { name: 'Medium', y: 31.0 },
+                { name: 'High', y: 14.0 }
+            ]
+        }]
+    })
+    //chart11
+    new Highcharts.Chart({
+        chart: {
+            renderTo: 'container11',
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        exporting: { enabled: false },
+        title: {
+            text: 'HGw Wifi Usage',
+            style: { color: 'blue' },
+            align: 'left',
+            x: 0,
+            y: 10
+        },
+        plotOptions: {
+            pie: {
+                center: [40, -10],
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            showInLegend: true
+
+        },
+        legend: {
+            align: 'left',
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontWeight: 'normal',
+                fontSize: '12px'
+            },
+            x: -10,
+            y: -10
+        },
+        series: [{
+            innerSize: '50%',
+            size: '380%',
+            showInLegend: true,
+            data: [
+                { name: 'Low', y: 55.0 },
+                { name: 'Medium', y: 31.0 },
+                { name: 'High', y: 14.0 }
+            ]
+        }]
+    })
+
+    //chart12
+    new Highcharts.Chart({
+        chart: {
+            renderTo: 'container12',
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        exporting: { enabled: false },
+        title: {
+            text: 'HGw Wifi Usage',
+            style: { color: 'blue' },
+            align: 'left',
+            x: 0,
+            y: 10
+        },
+        plotOptions: {
+            pie: {
+                center: [40, -10],
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            showInLegend: true
+
+        },
+        legend: {
+            align: 'left',
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontWeight: 'normal',
+                fontSize: '12px'
+            },
+            x: -10,
+            y: -10
+        },
+        series: [{
+            innerSize: '50%',
+            size: '380%',
+            showInLegend: true,
+            data: [
+                { name: 'Low', y: 55.0 },
+                { name: 'Medium', y: 31.0 },
+                { name: 'High', y: 14.0 }
+            ]
+        }]
+    })
+    //chart13
+    new Highcharts.Chart({
+        chart: {
+            renderTo: 'container13',
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        exporting: { enabled: false },
+        title: {
+            text: 'HGw Wifi Usage',
+            style: { color: 'blue' },
+            align: 'left',
+            x: 0,
+            y: 10
+        },
+        plotOptions: {
+            pie: {
+                center: [40, -10],
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            showInLegend: true
+
+        },
+        legend: {
+            align: 'left',
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontWeight: 'normal',
+                fontSize: '12px'
+            },
+            x: -10,
+            y: -10
+        },
+        series: [{
+            innerSize: '50%',
+            size: '380%',
+            showInLegend: true,
+            data: [
+                { name: 'Low', y: 55.0 },
+                { name: 'Medium', y: 31.0 },
+                { name: 'High', y: 14.0 }
+            ]
+        }]
+    })
+    //chart14
+    new Highcharts.Chart({
+        chart: {
+            renderTo: 'container14',
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        exporting: { enabled: false },
+        title: {
+            text: 'HGw Wifi Usage',
+            style: { color: 'blue' },
+            align: 'left',
+            x: 0,
+            y: 10
+        },
+        plotOptions: {
+            pie: {
+                center: [40, -10],
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            showInLegend: true
+
+        },
+        legend: {
+            align: 'left',
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontWeight: 'normal',
+                fontSize: '12px'
+            },
+            x: -10,
+            y: -10
+        },
+        series: [{
+            innerSize: '50%',
+            size: '380%',
+            showInLegend: true,
+            data: [
+                { name: 'Low', y: 55.0 },
+                { name: 'Medium', y: 31.0 },
+                { name: 'High', y: 14.0 }
+            ]
+        }]
+    })
+    //chart15
+    new Highcharts.Chart({
+        chart: {
+            renderTo: 'container15',
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        exporting: { enabled: false },
+        title: {
+            text: 'HGw Wifi Usage',
+            style: { color: 'blue' },
+            align: 'left',
+            x: 0,
+            y: 10
+        },
+        plotOptions: {
+            pie: {
+                center: [40, -10],
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            showInLegend: true
+
+        },
+        legend: {
+            align: 'left',
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontWeight: 'normal',
+                fontSize: '12px'
+            },
+            x: -10,
+            y: -10
+        },
+        series: [{
+            innerSize: '50%',
+            size: '380%',
+            showInLegend: true,
+            data: [
+                { name: 'Low', y: 55.0 },
+                { name: 'Medium', y: 31.0 },
+                { name: 'High', y: 14.0 }
+            ]
+        }]
+    })
+    //chart16
+    new Highcharts.Chart({
+        chart: {
+            renderTo: 'container16',
+            type: 'pie',
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        exporting: { enabled: false },
+        title: {
+            text: 'HGw Wifi Usage',
+            style: { color: 'blue' },
+            align: 'left',
+            x: 0,
+            y: 10
+        },
+        plotOptions: {
+            pie: {
+                center: [40, -10],
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            showInLegend: true
+
+        },
+        legend: {
+            align: 'left',
+            layout: 'vertical',
+            verticalAlign: 'bottom',
+            itemStyle: {
+                fontWeight: 'normal',
+                fontSize: '12px'
+            },
+            x: -10,
+            y: -10
+        },
+        series: [{
+            innerSize: '50%',
+            size: '380%',
+            showInLegend: true,
+            data: [
+                { name: 'Low', y: 55.0 },
+                { name: 'Medium', y: 31.0 },
+                { name: 'High', y: 14.0 }
+            ]
+        }]
+    })
+
+
+
+
 
 })
 

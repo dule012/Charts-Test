@@ -131,12 +131,15 @@ $(function () {
         apply = $('.apply'),
         macAddress = $('.mac-address'),
         contractId = $('.contract-id')
+
     resetFilters.on('click', function () {
         viewingData.css('display', 'none')
         days.css('display', 'none')
         filter.css('display', 'block')
         search.css('display', 'block')
         apply.css('display', 'block')
+        macAddress.text('')
+        contractId.text('')
         $(this).css('display', 'none')
     })
     apply.on('click', function () {
@@ -155,46 +158,46 @@ $(function () {
         }
     })
 
+    var pickTables = document.querySelector('.pick-tables'),
+        pickGraphs = document.querySelector('.pick-graphs'),
+        graphsWrapper = $('.charts'),
+        tablesWrapper = $('.tables')
+
+    pickTables.on('click', function (e) {
+        var value = macAddress.text()
+        if (value != '') {
+            tablesWrapper.css('display', 'block')
+            graphsWrapper.css('display', 'none')
+        }
+        if (e.target.closest('.pick-tables') == pickTables) {
+            pickTables.css({
+                'background-color': '#f8f8f8',
+                'border-bottom': '#f8f8f8'
+            })
+            pickGraphs.css({
+                'background-color': '#f4eded ',
+                'border-bottom': 'black'
+            })
+        }
+    })
+
+    pickGraphs.on('click', function (e) {
+        var value = macAddress.text()
+        if (value != '') {
+            graphsWrapper.css('display', 'block')
+            tablesWrapper.css('display', 'none')
+        }
+        if (e.target.closest('.pick-graphs') == pickGraphs) {
+            pickGraphs.css({
+                'background-color': '#f8f8f8',
+                'border-bottom': '#f8f8f8'
+            })
+            pickGraphs.css({
+                'background-color': '#f4eded',
+                'border-bottom': 'black'
+            })
+        }
+    })
+
+
 })
-/*<div class="col-12 row tables">
-
-                <div class="col-12 col-md-6">
-
-                    <div class="card-color">
-                        <p class="bigger-then-others">Overall Status</p>
-                        <div class="colored-div orange">Medium</div>
-                    </div>
-
-                    <div class="card-color">
-                        <p>RSS Status</p>
-                        <div class="colored-div red">Bad</div>
-                    </div>
-
-                    <div class="card-color">
-                        <p>Clinet RSS Status</p>
-                        <div class="colored-div orange">Medium</div>
-                    </div>
-
-                    <div class="card-color">
-                        <p>Sticky Client Status</p>
-                        <div class="colored-div green">Good</div>
-                    </div>
-                    <div class="card-color-wrapper">
-                        <div class="card-color">
-                            <p>Interference Status - overall</p>
-                            <div class="colored-div orange">Medium</div>
-                        </div>
-                        <div class="card-color">
-                            <p>Interference Status Co - Channel</p>
-                            <div class="colored-div green">Good</div>
-                        </div>
-                        <div class="card-color">
-                            <p>Interference Status - Ajdacent</p>
-                            <div class="colored-div red">Bad</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-
-                </div>
-            </div> */

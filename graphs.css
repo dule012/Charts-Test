@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: #f3efef;
+    background-color: #f8f8f8;
 }
 
-.graphs {
+.charts {
     min-width: 300px;
-    display: block;
+    display: none;
 }
 
 .filter {
@@ -29,15 +29,19 @@ body {
     top: 5%;
     left: 10px;
     background-color: white !important;
-    width: 135px;
+    width: 165px;
     height: 63px;
     border-radius: 10px;
 }
 
 .typed {
     color: blue;
-    font-size: 12px;
+    font-size: 10px;
     padding-left: 3px;
+}
+
+.currently {
+    font-size: 12px;
 }
 
 .grey {
@@ -207,9 +211,11 @@ body {
     bottom: 0;
     left: 2%;
     border: 1px solid black;
+    border-top: 4px solid rgba(250, 244, 244, 0.815);
     border-bottom: none;
     text-align: center;
     cursor: pointer;
+    z-index: 3;
 }
 
 .pick-graphs {
@@ -218,9 +224,11 @@ body {
     bottom: 0;
     left: 24%;
     border: 1px solid black;
+    border-top: 4px solid rgba(250, 244, 244, 0.815);
     border-bottom: none;
     text-align: center;
     cursor: pointer;
+    z-index: 3;
 }
 
 .charts {
@@ -277,6 +285,7 @@ svg {
     color: blue;
     border: 2px solid blue;
     border-radius: 12px;
+    font-size: 12px;
 }
 
 .drop-menu>div:nth-child(odd) {
@@ -411,10 +420,10 @@ svg {
         font-size: 13px !important;
     }
     .grey {
-        font-size: 13.5px;
+        font-size: 13px;
     }
     .typed {
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
     .days-wrapper {
         top: 55%;
@@ -445,9 +454,11 @@ svg {
         width: 22%;
         font-size: 11px !important;
     }
-
-    .currently, .grey, .typed {
-        font-size: 15px;
+    .typed {
+        font-size: 11px !important;
+    }
+    .currently {
+        font-size: 13px;
     }
     .days-wrapper {
         width: 30%;
