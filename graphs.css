@@ -215,7 +215,6 @@ body {
     border-bottom: none;
     text-align: center;
     cursor: pointer;
-    z-index: 3;
 }
 
 .pick-graphs {
@@ -228,7 +227,6 @@ body {
     border-bottom: none;
     text-align: center;
     cursor: pointer;
-    z-index: 3;
 }
 
 .charts {
@@ -276,7 +274,9 @@ svg {
     text-align: center;
     position: relative;
 }
-
+.block{
+    display:'block';
+}
 .drop-menu {
     position: absolute;
     width: 100%;
@@ -286,6 +286,7 @@ svg {
     border: 2px solid blue;
     border-radius: 12px;
     font-size: 12px;
+    display: none;
 }
 
 .drop-menu>div:nth-child(odd) {
@@ -326,7 +327,6 @@ svg {
     color: black;
     overflow: hidden;
     border-radius: 10px;
-    display: none;
 }
 
 .apply-date {
@@ -442,7 +442,6 @@ svg {
     }
     .date-wrapper {
         left: -45%;
-        display: none;
     }
 }
 
@@ -454,11 +453,14 @@ svg {
         width: 22%;
         font-size: 11px !important;
     }
+    .grey{
+        font-size: 14px;
+    }
     .typed {
-        font-size: 11px !important;
+        font-size: 11.5px !important;
     }
     .currently {
-        font-size: 13px;
+        font-size: 14px !important;
     }
     .days-wrapper {
         width: 30%;
@@ -495,6 +497,12 @@ svg {
     }
     .apply {
         font-size: 16px;
+    }
+    .grey{
+        font-size: 14px;
+    }
+    .typed {
+        font-size: 13px !important;
     }
     .pick-tables {
         width: 10%;

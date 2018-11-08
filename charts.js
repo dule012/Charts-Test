@@ -754,7 +754,7 @@ $(function () {
         exporting: { enabled: false },
         title: {
             text: 'HGw Wifi Usage',
-            style: { color: 'blue' },
+            style: { color: 'blue', fontSize: 15 },
             align: 'left',
             x: 0,
             y: 10
@@ -782,7 +782,7 @@ $(function () {
         },
         series: [{
             innerSize: '50%',
-            size: '380%',
+            size: '250%',
             showInLegend: true,
             data: [
                 { name: 'Low', y: 55.0 },
@@ -803,7 +803,7 @@ $(function () {
         exporting: { enabled: false },
         title: {
             text: 'HGw Wifi Usage',
-            style: { color: 'blue' },
+            style: { color: 'blue', fontSize: 15 },
             align: 'left',
             x: 0,
             y: 10
@@ -831,7 +831,7 @@ $(function () {
         },
         series: [{
             innerSize: '50%',
-            size: '380%',
+            size: '250%',
             showInLegend: true,
             data: [
                 { name: 'Low', y: 55.0 },
@@ -852,7 +852,7 @@ $(function () {
         exporting: { enabled: false },
         title: {
             text: 'HGw Wifi Usage',
-            style: { color: 'blue' },
+            style: { color: 'blue', fontSize: 15 },
             align: 'left',
             x: 0,
             y: 10
@@ -880,7 +880,7 @@ $(function () {
         },
         series: [{
             innerSize: '50%',
-            size: '380%',
+            size: '250%',
             showInLegend: true,
             data: [
                 { name: 'Low', y: 55.0 },
@@ -902,7 +902,7 @@ $(function () {
         exporting: { enabled: false },
         title: {
             text: 'HGw Wifi Usage',
-            style: { color: 'blue' },
+            style: { color: 'blue', fontSize: 15 },
             align: 'left',
             x: 0,
             y: 10
@@ -930,7 +930,7 @@ $(function () {
         },
         series: [{
             innerSize: '50%',
-            size: '380%',
+            size: '250%',
             showInLegend: true,
             data: [
                 { name: 'Low', y: 55.0 },
@@ -951,7 +951,7 @@ $(function () {
         exporting: { enabled: false },
         title: {
             text: 'HGw Wifi Usage',
-            style: { color: 'blue' },
+            style: { color: 'blue', fontSize: 15 },
             align: 'left',
             x: 0,
             y: 10
@@ -979,7 +979,7 @@ $(function () {
         },
         series: [{
             innerSize: '50%',
-            size: '380%',
+            size: '250%',
             showInLegend: true,
             data: [
                 { name: 'Low', y: 55.0 },
@@ -1000,7 +1000,7 @@ $(function () {
         exporting: { enabled: false },
         title: {
             text: 'HGw Wifi Usage',
-            style: { color: 'blue' },
+            style: { color: 'blue', fontSize: 15 },
             align: 'left',
             x: 0,
             y: 10
@@ -1028,7 +1028,7 @@ $(function () {
         },
         series: [{
             innerSize: '50%',
-            size: '380%',
+            size: '250%',
             showInLegend: true,
             data: [
                 { name: 'Low', y: 55.0 },
@@ -1049,7 +1049,7 @@ $(function () {
         exporting: { enabled: false },
         title: {
             text: 'HGw Wifi Usage',
-            style: { color: 'blue' },
+            style: { color: 'blue', fontSize: 15 },
             align: 'left',
             x: 0,
             y: 10
@@ -1077,7 +1077,7 @@ $(function () {
         },
         series: [{
             innerSize: '50%',
-            size: '380%',
+            size: '250%',
             showInLegend: true,
             data: [
                 { name: 'Low', y: 55.0 },
@@ -1098,7 +1098,7 @@ $(function () {
         exporting: { enabled: false },
         title: {
             text: 'HGw Wifi Usage',
-            style: { color: 'blue' },
+            style: { color: 'blue', fontSize: 15 },
             align: 'left',
             x: 0,
             y: 10
@@ -1126,7 +1126,7 @@ $(function () {
         },
         series: [{
             innerSize: '50%',
-            size: '380%',
+            size: '250%',
             showInLegend: true,
             data: [
                 { name: 'Low', y: 55.0 },
